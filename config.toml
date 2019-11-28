@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "https://ClaudiaJKang.github.io"
 title = "johndoe"
 theme = "hugo-coder"
 languagecode = "en"
@@ -31,7 +31,7 @@ disqusShortname = "yourdiscussshortname"
     rtl = false
 
     math = true
-    custom_css = ["css/custom.css"]
+    custom_css = ["css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css"]
 
 # Social links
 [[params.social]]
