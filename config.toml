@@ -1,23 +1,15 @@
 baseurl = "https://ClaudiaJKang.github.io"
-title = "Claudia J. Kang"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
-
 paginate = 20
 canonifyurls = true
-
 pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
 disqusShortname = "claudiajkang"
 
 [params]
-    author = "Claudia J. Kang / 강주희"
-    info = "Computer Engineering Student"
-    description = "Claudia J. Kang's personal website"
-    keywords = "blog,developer,personal"
     avatarurl = "https://avatars1.githubusercontent.com/u/17492826?s=460&v=4"
 
     favicon_32 = "/img/favicon-32x32.png"
@@ -31,25 +23,55 @@ disqusShortname = "claudiajkang"
     math = true
     custom_css = ["css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css"]
 
-# Social links
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/ClaudiaJKang/"
-[[params.social]]
-    name = "Linkedin"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 2
-    url = "https://www.linkedin.com/in/claudiajkang/"
-[[params.social]]
-    name = "Medium"
-    icon = "fab fa-medium fa-2x"
-    weight = 3
-    url = "https://medium.com/@claudiajkang/"
+    # Social links
+    [[params.social]]
+        name = "Github"
+        icon = "fab fa-github fa-2x"
+        weight = 1
+        url = "https://github.com/ClaudiaJKang/"
+    [[params.social]]
+        name = "Linkedin"
+        icon = "fab fa-linkedin fa-2x"
+        weight = 2
+        url = "https://www.linkedin.com/in/claudiajkang/"
+    [[params.social]]
+        name = "Medium"
+        icon = "fab fa-medium fa-2x"
+        weight = 3
+        url = "https://medium.com/@claudiajkang/"
 
-# Menu links
-[[menu.main]]
-    name = "About"
-    weight = 1
-    url = "/about/"
+[languages]
+    [languages.en]
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "Claudia J. Kang"
+
+        # You can configure the theme parameter for each language. 
+        [languages.en.params]
+            author = "Claudia J. Kang"
+            info = "Computer Engineering Student"
+            description = "Claudia J. Kang's personal website"
+            keywords = "blog,developer,personal"
+
+        [languages.en.menu] # It is possible to change the menu too.
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1.0
+            url = "/about/"
+
+    [languages.ko]
+        languagename = "한국어"
+        title = "Claudia J. Kang"
+
+        [languages.ko.params]
+            author = "강주희"
+            info = "전자정보 / 컴퓨터공학 학생"
+            description = "Claudia J. Kang's personal website"
+            keywords = "blog,developer,personal"
+
+        [languages.ko.menu]
+
+            [[languages.ko.menu.main]]
+            name = "소개"
+            weight = 1.0
+            url = "/ko/about/"
+
